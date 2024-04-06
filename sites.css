@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Rubik Doodle Shadow', system-ui; */
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.543),rgba(0, 0, 0, 0.435)),url(homepagebk.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.navlinks{
+    flex: 1;   
+    /* it will occupy all space in the row */
+    text-align: right;
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-top: -30px;
+    margin-right: 20px;
+}
+
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: brown;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+
+}
+
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: white;
+}
+
+.hero-btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: rgba(245, 84, 63, 0.718);
+    border: 1px solid rgba(245, 84, 63, 0.718);
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid brown;
+    background: brown;
+    transition: 0.5s;
+    color: white;
+}
+
+/* ============Section-1-COMPLETE=========== */
+
+
+.sec2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.sec2 h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.sec2 p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.sec2main{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* .sec2main img{
+    width: 263px;
+    height: 227px;
+} */
+
+.sec2-1{
+    flex-basis: 30%;
+    background: burlywood;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.sec2-1 h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.sec2-1:hover{
+    box-shadow: 0 0 20px 0px burlywood;
+}
+
+
+
+/* ==========Section-3================= */
+
+.sec3{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sec3main{
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.sec3-1{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 500px;
+}
+
+.sec3-1 img{
+    width: 300px;
+    height: 500px;
+}
+
+.text1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.text1:hover{
+    background: rgba(34, 34, 34, 0.652);
+}
+
+.text1 h3{
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: blueviolet;
+    opacity: 0;
+    transition: 0.5s;
+}
+.text1:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+/* =============Section-4=================== */
+
+.sec4{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.col p{
+    padding: 0;
+}
+
+.col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+
+/* =============Section-5=================== */
+
+.revies{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.sec5{
+    margin-top: 50px;
+}
+
+.col1{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: rgba(245, 84, 63, 0.718);
+    cursor: pointer;
+    padding: 25px;
+    display: flex;
+}
+
+.col1 img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;   
+}
+
+.col1 p{
+    padding: 0;
+}
+
+.col1 h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.arjun{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: rgb(249, 82, 82);
+    border: 1px solid rgb(249, 82, 82);
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.button:hover{
+    border: 1px solid brown;
+    background: brown;
+    transition: 0.5s;
+}
+
+
+/* ============Secton-6========================= */
+
+.sec6{
+    margin: 100px auto;
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.38),rgba(0, 0, 0, 0.414)),url(Contact\ Us.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.sec6 h1{
+    color: rgb(33, 203, 222);
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+
+/* ===============Footer=========== */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgba(0, 0, 0, 0.571);
+}
+
+.footer h4{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.paraf{
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========media========================= */
+
+@media only screen and (max-width:700px) {
+    nav img{
+        width: 100px;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box p{
+        font-size: 14px;
+    }
+
+    .navlinks ul li{
+        display: none;
+    }
+
+    /* =============section-2======== */
+
+    .sec2main{
+        flex-direction: column;
+    }
+    .sec2-1 img{
+        width: 250px;
+        background-size: cover;
+    }
+    
+
+    /* ================section-3========== */
+
+    .sec3main{
+        flex-direction: column;
+    }
+    .sec3-1{
+        width: 100%;
+        height: 300px;
+    }
+
+    /* =================Section-4============ */
+
+    .row{
+        flex-direction: column;
+    }
+
+}
